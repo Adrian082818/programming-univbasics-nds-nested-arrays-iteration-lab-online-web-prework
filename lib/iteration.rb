@@ -18,10 +18,12 @@ return results
 end 
 
 def find_greater_pair(src)
+  outer_results = []
   total = 0 
  row_index = 0 
 while row_index < src.count do 
   element_index = 0 
+  inner_results = []
   while element_index < src[row_index].count do
     total += src[row_index][element_index]
    element_index += 1 
